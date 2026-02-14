@@ -1,0 +1,255 @@
+DIA 13 – REVISÃO GERAL (DO ZERO ATÉ SQL INJECTION)
+🎯 OBJETIVO DO DIA 13
+
+Revisar tudo o que foi aprendido até agora, fixar conceitos essenciais de segurança ofensiva e defensiva, alinhar o conhecimento com o mercado de trabalho e preparar a base para iniciar a certificação eJPT.
+
+🧠 VISÃO GERAL DO QUE FOI ESTUDADO
+
+Você percorreu o caminho que todo iniciante sério em Cybersecurity deveria percorrer:
+
+Fundamentos de sistemas
+
+Programação básica em C (foco em falhas)
+
+Buffer Overflow
+
+Exploit (conceito)
+
+Defesa contra falhas
+
+SQL Injection do zero
+
+SQL Injection com UNION
+
+Pensamento ofensivo e defensivo
+
+Laboratórios práticos (TryHackMe)
+
+Isso não é básico demais — isso é exatamente o nível esperado para estágio e início de carreira.
+
+🖥️ FUNDAMENTOS DE SISTEMAS
+🔹 Linux
+
+Você aprendeu que:
+
+Linux é o sistema mais usado em servidores
+
+A maioria dos ataques acontece contra serviços Linux
+
+O terminal é a principal ferramenta do profissional de segurança
+
+🔹 Comandos essenciais que você já usou
+ls        → lista arquivos
+cd        → entra em diretórios
+pwd       → mostra onde você está
+nano      → editor de texto no terminal
+gcc       → compila programas em C
+./programa → executa um programa
+
+
+👉 Isso é obrigatório para qualquer vaga em segurança.
+
+💻 PROGRAMAÇÃO EM C (BASE PARA ENTENDER EXPLOITS)
+
+Você não virou programador — e nem precisava.
+Você aprendeu o suficiente para entender falhas, que é o objetivo real.
+
+Palavras-chave importantes
+
+char → tipo de dado para texto
+
+buffer → espaço na memória para guardar dados
+
+strcpy() → copia texto SEM verificar tamanho (perigoso)
+
+string.h → biblioteca de manipulação de texto
+
+buffer overflow → quando dados ultrapassam o limite do buffer
+
+📌 Você entendeu algo crucial:
+
+O problema não é o atacante, é o código mal escrito.
+
+💥 BUFFER OVERFLOW (O QUE VOCÊ REALMENTE APRENDEU)
+
+Você aprendeu que:
+
+Programas podem ser explorados se não validarem entradas
+
+Um atacante pode sobrescrever a memória
+
+Isso pode causar:
+
+Crash
+
+Execução de código
+
+Acesso indevido
+
+Evidência prática
+
+Quando apareceu:
+
+*** stack smashing detected ***
+
+
+👉 Isso provou que:
+
+O sistema detectou tentativa de corrupção de memória
+
+A vulnerabilidade realmente existia
+
+Você conseguiu provocar o erro
+
+Isso é aprendizado real, não teoria.
+
+🛡️ DEFESA (MENTALIDADE PROFISSIONAL)
+
+Você também aprendeu que segurança não é só atacar.
+
+Medidas defensivas que você entendeu:
+
+Validar entrada do usuário
+
+Não confiar em dados do formulário
+
+Usar funções seguras
+
+Não inserir dados diretamente no SQL
+
+Usar prepared statements
+
+📌 Isso te aproxima muito de AppSec e Blue Team.
+
+🗄️ SQL INJECTION – DO ZERO
+O que você aprendeu de verdade:
+
+O login executa uma query SQL
+
+Se o input não for tratado, vira parte da query
+
+Isso permite manipulação do banco
+
+Exemplo mental:
+Entrada do usuário → vira código SQL
+
+
+Se o sistema confia demais:
+👉 o atacante controla a query
+
+🔗 SQL INJECTION COM UNION
+
+Essa parte é nível júnior real de mercado.
+
+Você aprendeu:
+
+Descobrir o número de colunas
+
+Ajustar o UNION SELECT
+
+Fazer a query funcionar
+
+Extrair dados reais do banco
+
+Resultado prático
+
+Você conseguiu:
+
+Visualizar dados de usuários
+
+Entender a estrutura da tabela
+
+Capturar uma flag
+
+Isso mostra:
+✅ compreensão
+✅ persistência
+✅ raciocínio lógico
+
+🧪 LABORATÓRIOS (TRYHACKME)
+
+Ferramenta usada:
+
+TryHackMe
+
+AttackBox
+
+Navegador Firefox dentro do lab
+
+Você aprendeu:
+
+Que erros fazem parte
+
+Que nem tudo funciona de primeira
+
+Que investigar faz parte do processo
+
+Isso é exatamente como no trabalho real.
+
+🧰 FERRAMENTAS QUE VOCÊ JÁ CONHECE
+
+Mesmo sem perceber, você já teve contato com:
+
+Linux Terminal
+
+GCC
+
+Nano
+
+Navegador para testes
+
+TryHackMe Labs
+
+SQL básico
+
+Exploits (conceito)
+
+PoC vs Exploit
+
+📌 Isso já pode ser citado em currículo como experiência prática em laboratório.
+
+📈 ALINHAMENTO COM O MERCADO
+
+O que você estudou até agora se conecta com vagas de:
+
+Estágio em Cybersecurity
+
+SOC Analyst Júnior
+
+AppSec Júnior
+
+Pentest Trainee
+
+Analista de Vulnerabilidades
+
+Você não está atrasado.
+Você está no caminho correto.
+
+🚀 PRÓXIMO PASSO: CERTIFICAÇÃO eJPT
+
+A eJPT (eLearnSecurity Junior Penetration Tester) cobra exatamente:
+
+✔ Fundamentos de redes
+✔ Linux básico
+✔ Web attacks
+✔ SQL Injection
+✔ Enumeração
+✔ Pensamento ofensivo
+
+Ou seja:
+👉 você já começou a base sem perceber.
+
+📌 CONCLUSÃO DO DIA 13
+
+No Dia 13 você:
+
+Consolidou tudo o que aprendeu
+
+Organizou o conhecimento
+
+Entendeu o “porquê” das coisas
+
+Se preparou mentalmente para certificação
+
+🔒 Agora você não é mais leigo.
+Você é iniciante em segurança ofensiva, que é exatamente o público da eJPT.
