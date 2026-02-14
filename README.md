@@ -68,7 +68,7 @@ Currently preparing for:
 | Web Security | IIS, SQL Injection, Authentication flaws, HTTP methods |
 | Exploitation | Basic buffer overflow, post-exploitation |
 | Reporting | Technical documentation, mitigation reporting |
-| Labs / Training | TryHackMe, HackTheBox, PortSwigger Web Academy |
+| Labs / Training | TryHackMe, HackTheBox |
 
 ---
 
