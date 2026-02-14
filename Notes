@@ -1,0 +1,32 @@
+#DAY 1 – NETWORK FUNDAMENTALS
+
+Aprendi:
+- O que é um IP
+- O que é uma porta
+- Relação entre IP + Porta + Serviço
+- Que todo ataque começa com enumeração
+
+Conceitos:
+- IP identifica um dispositivo na rede
+- Porta identifica qual serviço pode estar rodando no sistema
+- Porta aberta = serviço ativo
+
+Exemplos de portas comuns:
+80  -> HTTP (site)
+443 -> HTTPS (site seguro)
+22  -> SSH (acesso remoto)
+21  -> FTP (transferência de arquivos)
+
+Mentalidade adquirida:
+- Primeiro descubro IP
+- Depois portas
+- Depois serviços
+
+Dificuldades:
+- Nenhuma crítica
+
+Observação:
+- Sem IP e porta não existe ataque.
+
+
+
