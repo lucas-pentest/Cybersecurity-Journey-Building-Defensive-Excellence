@@ -1,0 +1,146 @@
+DIA 14
+
+Início Oficial da Certificação eJPT
+
+🎯 Objetivo do Dia
+
+O Dia 14 teve como foco iniciar oficialmente a jornada para a certificação eJPT (eLearnSecurity Junior Penetration Tester), entendendo como a prova funciona, quais conhecimentos são cobrados e estabelecendo a base técnica essencial: Networking.
+
+🏆 O que é a eJPT
+
+A eJPT é uma certificação prática de Pentest Júnior, focada em habilidades reais de segurança ofensiva.
+Ela avalia a capacidade do candidato de:
+
+Enumerar sistemas
+
+Identificar serviços
+
+Explorar vulnerabilidades simples
+
+Pensar como um atacante real
+
+A prova não é teórica, sendo baseada em um laboratório prático.
+
+📝 Estrutura da Prova
+
+100% prática
+
+Ambiente real de laboratório
+
+Perguntas baseadas no que for descoberto no sistema
+
+Uso permitido de anotações, ferramentas e pesquisas
+
+Avalia raciocínio, não decoreba
+
+🧠 Mentalidade Esperada
+
+Durante a prova e os estudos, o foco deve ser:
+
+Entender o alvo
+
+Enumerar corretamente
+
+Analisar resultados
+
+Explorar com cautela
+
+Validar o que foi encontrado
+
+Pular etapas reduz drasticamente as chances de sucesso.
+
+🌐 Introdução ao Networking (Base da eJPT)
+IP (Internet Protocol)
+
+É o endereço que identifica um dispositivo dentro da rede.
+Exemplo:
+
+10.64.176.57
+
+
+Funciona como o endereço de uma casa.
+
+Porta
+
+Identifica qual serviço está rodando naquele IP.
+
+Exemplos comuns:
+
+Porta 80 → HTTP (site)
+
+Porta 443 → HTTPS
+
+Porta 21 → FTP
+
+Porta 22 → SSH
+
+Um único IP pode ter várias portas abertas.
+
+Protocolo
+
+Define as regras de comunicação entre sistemas.
+
+Principais:
+
+TCP → comunicação confiável
+
+UDP → comunicação rápida
+
+HTTP → web
+
+FTP → transferência de arquivos
+
+Cliente e Servidor
+
+Cliente: quem faz a requisição (ex: navegador)
+
+Servidor: quem responde (ex: site, sistema)
+
+🛠️ Ferramenta Introduzida – Nmap
+
+O Nmap é a principal ferramenta de enumeração da eJPT.
+
+Ele permite identificar:
+
+Portas abertas
+
+Serviços em execução
+
+Versões dos serviços
+
+Comandos Aprendidos
+
+Scan básico:
+
+nmap <IP>
+
+
+Scan mais completo (muito usado na prova):
+
+nmap -sC -sV <IP>
+
+📈 Conexão com o Mercado
+
+Conhecimentos de rede + Nmap são exigidos em vagas como:
+
+Estágio em Cybersecurity
+
+SOC Analyst Júnior
+
+Pentest Trainee
+
+Segurança da Informação Júnior
+
+✅ Conclusão do Dia 14
+
+No Dia 14 foi construída a base para:
+
+Entendimento da certificação eJPT
+
+Funcionamento da prova
+
+Conceitos fundamentais de rede
+
+Uso consciente do Nmap
+
+Mentalidade profissional de pentest
