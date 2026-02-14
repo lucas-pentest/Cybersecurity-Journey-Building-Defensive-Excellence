@@ -23,7 +23,7 @@ Develop real-world skills required for **professional penetration testing**, foc
 - Web application and network service security testing  
 - Vulnerability assessment and mitigation insights  
 - Hands-on learning aligned with **industry best practices**  
-
+ > In the majority of my reports, content will be available in English. However, since my native language is Portuguese, some of my learning notes may require enabling browser translation.
 ---
 
 ## 🔎 Focus Areas
