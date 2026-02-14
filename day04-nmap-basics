@@ -1,0 +1,23 @@
+DIA 4 – PESQUISA DE VULNERABILIDADES (CVE)
+
+Serviço pesquisado:
+Microsoft IIS 10.0
+
+CVE encontrado:
+CVE-2025-59282
+
+Tipo de falha:
+Execução remota de código (RCE)
+
+Categoria:
+Race condition
+Use-after-free
+
+Resumo:
+Vulnerabilidade causada por condição de corrida e uso de memória após liberação em componentes relacionados a objetos COM e memória compartilhada do IIS. Pode permitir execução de código arbitrário.
+
+Conclusão:
+Conhecer versões permite buscar CVEs específicos e entender possíveis formas de exploração.
+
+Mentalidade:
+Serviço → Versão → CVE → Exploit
