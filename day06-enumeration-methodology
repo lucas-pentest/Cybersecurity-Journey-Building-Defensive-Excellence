@@ -1,0 +1,98 @@
+DIA 6 – PoC vs Exploit
+===========================
+
+Objetivo:
+Aprender a diferenciar Proof of Concept (PoC) de Exploit funcional usando o searchsploit.
+
+----------------------------------
+Conceitos Importantes
+----------------------------------
+
+PoC (Proof of Concept):
+Demonstra que uma vulnerabilidade existe.
+Normalmente não gera shell.
+Pode causar crash, erro ou apenas validação.
+Arquivos comuns: .txt
+Palavras-chave comuns: dos, scanner, test, checker.
+
+Exploit:
+Código que realmente explora a vulnerabilidade.
+Pode executar comandos, abrir shell ou criar backdoor.
+Arquivos comuns: .c, .py, .pl, .rb
+Palavras-chave comuns: remote, command execution, shell, overflow.
+
+----------------------------------
+Ferramenta Usada
+----------------------------------
+
+searchsploit
+
+Comando:
+
+searchsploit ftp anonymous
+
+----------------------------------
+Resultados Analisados
+----------------------------------
+
+Ipswitch WS_FTP Server 2.0 - Anonymous
+windows/remote/21036.pl
+Classificação: Exploit
+Motivo: Script Perl, remoto.
+
+libc/glob(3) - Resource Exhaustion
+multiple/dos/15215.txt
+Classificação: PoC
+Motivo: DoS, arquivo texto.
+
+Oftpd 0.3.7 - Unsupported Address Family
+linux/dos/29470.txt
+Classificação: PoC
+Motivo: DoS, arquivo texto.
+
+Pablo Software Solutions FTP Service
+windows/remote/22721.txt
+Classificação: Exploit conceitual / manual
+Motivo: Remoto, mas em texto; provavelmente passo a passo.
+
+ProFTPd 1.2 pre - Remote
+linux/remote/19476.c
+Classificação: Exploit
+Motivo: Código C com exploração remota.
+
+----------------------------------
+Regras Práticas Aprendidas
+----------------------------------
+
+- Nem todo resultado no searchsploit é exploit real.
+- Extensão do arquivo importa.
+- DOS quase sempre indica PoC.
+- Arquivos compiláveis geralmente são exploits.
+- Ler título, caminho e extensão antes de confiar.
+
+----------------------------------------------
+Indicadores e o que sugerem
+----------------------------------------------
+
+Indicador	         	Sugere
+dos	        		 PoC
+scanner	      			 PoC
+.txt	       		   Geralmente PoC
+.py .c .pl		   Geralmente exploit
+remote command execution	Exploit
+
+----------------------------------
+Aprendizado Final
+----------------------------------
+
+Aprendi a distinguir PoC de exploit funcional.
+Agora sei avaliar rapidamente se existe exploração real disponível.
+
+----------------------------------
+Ligação com Mercado
+----------------------------------
+
+Analistas de segurança e pentesters precisam validar:
+- Se uma vulnerabilidade possui exploit público.
+- Se é explorável na prática.
+- Qual risco real para a empresa.
