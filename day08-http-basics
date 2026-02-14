@@ -1,0 +1,73 @@
+DIA 8 - MINI EXPLOIT DIDÁTICO (BUFFER OVERFLOW)
+
+Objetivo:
+Criar um programa vulnerável, compilar, executar e provocar estouro de memória para entender como nasce um exploit.
+
+Ambiente:
+TryHackMe Terminal / Linux
+
+Criação do arquivo:
+
+nano vulneravel.c
+
+Código utilizado:
+
+#include <stdio.h>
+#include <string.h>
+
+void vulneravel(char *input) {
+char buffer[64];
+strcpy(buffer, input);
+}
+
+int main(int argc, char *argv[]) {
+vulneravel(argv[1]);
+printf("Programa finalizado\n");
+return 0;
+}
+
+Salvar arquivo no nano:
+CTRL + O
+ENTER
+CTRL + X
+
+Compilar programa:
+
+gcc vulneravel.c -o vulneravel
+
+Executar normalmente:
+
+./vulneravel TESTE
+
+Saída esperada:
+
+Programa finalizado
+
+Executar com overflow:
+
+./vulneravel AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+Saída observada:
+
+*** stack smashing detected ***
+Aborted (core dumped)
+
+Significado:
+
+O programa recebeu mais dados do que o espaço disponível no buffer e a memória foi corrompida.
+
+Definições importantes:
+
+char → tipo de dado que armazena um caractere
+buffer → espaço reservado na memória
+string.h → biblioteca para manipular textos
+strcpy → copia texto sem validar tamanho (perigoso)
+
+O que foi aprendido:
+
+Criar arquivo
+Editar código
+Compilar programa
+Executar binário
+Gerar crash
+Entender Buffer Overflow
