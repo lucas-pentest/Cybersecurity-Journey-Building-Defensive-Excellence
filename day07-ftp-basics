@@ -1,0 +1,152 @@
+DIA 7 – Anatomia de um Exploit
+===========================
+
+Objetivo:
+Analisar um exploit real por dentro e compreender seus componentes.
+
+Exploit analisado:
+ProFTPd 1.2 pre1/pre2/pre3/pre4/pre5 – Remote Buffer Overflow
+Arquivo: linux/remote/19476.c
+
+----------------------------------
+Comentário Inicial do Exploit
+----------------------------------
+
+Fonte da vulnerabilidade:
+SecurityFocus BID 612
+
+Vulnerabilidade:
+Remote Buffer Overflow
+
+Versões afetadas:
+1.2pre1
+1.2pre2
+1.2pre3
+1.2pre4
+1.2pre5
+
+Função vulnerável:
+sprintf()
+
+Local do bug:
+src/log.c -> log_xfer()
+
+Impacto:
+Remote Root
+
+Exploit testado em:
+Linux RedHat 6.0
+
+----------------------------------
+Importância do Sistema Operacional
+----------------------------------
+
+Exploit depende da organização de memória do sistema.
+Offsets variam entre distribuições e versões.
+Exploit antigo pode falhar em sistemas modernos.
+
+----------------------------------
+Includes (Bibliotecas)
+----------------------------------
+
+O exploit utiliza bibliotecas para:
+
+- Entrada e saída
+- Manipulação de strings
+- Controle de processos
+- Comunicação em rede (sockets)
+
+Isso indica exploit remoto real.
+
+----------------------------------
+Defines Importantes
+----------------------------------
+
+#define RET 0xbffff550
+Endereço de retorno sobrescrito.
+
+#define ALINEA 0
+Valor de alinhamento de memória.
+
+Exploit sobrescreve endereço de retorno da função.
+
+----------------------------------
+Shellcode
+----------------------------------
+
+Shellcode é código em bytes que executa /bin/sh.
+Inclui NOP sled no início.
+Responsável por abrir shell remoto.
+
+----------------------------------
+Buffers
+----------------------------------
+
+char tmp[256];
+char name[128];
+char pass[128];
+char sendln[1024];
+char recvln[4048];
+char buf1[1000];
+char buf2[200];
+
+Buffers grandes usados para provocar overflow.
+
+----------------------------------
+Argumentos do Programa
+----------------------------------
+
+Uso:
+
+pro <your_ip> <host> <dir> [-l name pass] [offset align]
+
+Exploit aceita:
+- IP do atacante
+- Host alvo
+- Diretório
+- Usuário e senha opcionais
+- Ajuste de offset
+- Ajuste de alinhamento
+
+Exploit flexível.
+
+----------------------------------
+Conexão de Rede
+----------------------------------
+
+Exploit cria socket TCP.
+Realiza bind.
+Conecta ao servidor vulnerável.
+Exibe IPs e portas.
+
+----------------------------------
+Fluxo do Ataque
+----------------------------------
+
+1) Cria buffers
+2) Insere shellcode
+3) Preenche com RET
+4) Envia payload
+5) Servidor sofre overflow
+6) CPU pula para shellcode
+7) Shell é obtido
+
+----------------------------------
+Conclusão
+----------------------------------
+
+Exploit real contém:
+- Shellcode
+- RET
+- Buffers
+- Socket
+- Lógica de envio
+
+Agora sei identificar e entender exploit por dentro.
+
+----------------------------------
+Ligação com Mercado
+----------------------------------
+
+Pentesters e pesquisadores analisam exploits
+para validar impacto real e escrever detecções.
