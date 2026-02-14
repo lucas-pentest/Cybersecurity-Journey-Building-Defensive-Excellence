@@ -1,1 +1,17 @@
+DIA 3
+
+Comando:
+nmap -sV <IP>
+
+Serviços e versões:
+21 ftp FileZilla ftpd
+80 http Microsoft IIS 10.0
+135 msrpc Windows RPC
+3389 rdp Microsoft Terminal Services
+
+Sistema operacional:
+Windows
+
+Conclusão:
+Versão permite buscar exploits específicos.
 
