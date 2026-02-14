@@ -1,0 +1,102 @@
+DIA 5 – Pesquisa de CVE e Exploit
+===========================
+
+Objetivo:
+Aprender a pesquisar vulnerabilidades a partir de serviços encontrados e verificar se existe exploit público disponível.
+
+----------------------------------
+Contexto
+----------------------------------
+
+Durante o scan com Nmap foi identificado:
+
+Porta 80/tcp
+Serviço: Microsoft IIS
+Versão: Microsoft IIS 10.0
+
+----------------------------------
+Ação Executada
+----------------------------------
+
+Pesquisa da vulnerabilidade:
+
+Microsoft IIS 10.0 CVE
+
+Vulnerabilidade encontrada:
+
+CVE-2025-59282
+
+----------------------------------
+Descrição da Vulnerabilidade
+----------------------------------
+
+Tipo:
+Remote Code Execution (RCE)
+
+Causa:
+Race condition combinada com Use-After-Free em componentes do IIS.
+
+Impacto Teórico:
+Um atacante remoto pode executar código arbitrário no servidor.
+
+----------------------------------
+Verificação de Exploit Público
+----------------------------------
+
+Fontes consultadas:
+
+- NVD (National Vulnerability Database)
+- Advisories
+- Bases de vulnerabilidades
+- Exploit-DB
+
+Resultado:
+
+Nenhuma fonte confiável indica exploit funcional público disponível para CVE-2025-59282.
+
+----------------------------------
+Conclusão Técnica
+----------------------------------
+
+Existe vulnerabilidade documentada.
+Não existe exploit público confirmado.
+
+O que pode existir:
+PoC (Proof of Concept)
+
+----------------------------------
+Diferença Importante
+----------------------------------
+
+PoC:
+Prova que a falha existe.
+Nem sempre compromete o sistema.
+
+Exploit:
+Código que realmente explora a falha e gera impacto real.
+
+----------------------------------
+Interpretação Profissional
+----------------------------------
+
+Frase correta:
+
+"Vulnerabilidade confirmada, porém sem exploit público disponível."
+
+----------------------------------
+Aprendizado Final
+----------------------------------
+
+- Nem toda CVE possui exploit.
+- Exploit-DB é principal fonte para códigos.
+- Título de site não garante exploit real.
+- Sempre validar em bases confiáveis.
+
+----------------------------------
+Ligação com Mercado
+----------------------------------
+
+Profissionais de segurança avaliam:
+- Se CVE tem exploit.
+- Se é explorável.
+- Qual risco real para a empresa.
