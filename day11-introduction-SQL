@@ -1,0 +1,68 @@
+DIA 11 — SQL INJECTION (CONCEITOS + DEFESA)
+🔹 O que aprendi
+
+O que é SQL Injection
+
+Como uma aplicação web conversa com o banco de dados
+
+Como entradas de usuário mal tratadas viram comandos SQL
+
+Como um login pode ser burlado sem senha
+
+Como corrigir essa falha corretamente
+
+🔹 Conceitos importantes (em linguagem simples)
+
+SQL (Structured Query Language)
+→ Linguagem usada para conversar com o banco de dados.
+
+SQL Injection
+→ Quando o usuário consegue inserir comandos SQL dentro de um campo de entrada (login, formulário, URL).
+
+Concatenar query
+→ Juntar texto fixo do sistema com o que o usuário digitou (prática insegura).
+
+Authentication Bypass
+→ Entrar no sistema sem saber a senha.
+
+🔹 Exemplo de ataque aprendido
+
+Entrada no campo ProfileID:
+
+1 OR 1=1--
+
+
+O que isso faz:
+
+1=1 → sempre verdadeiro
+
+-- → comenta o resto da query
+
+A verificação da senha é ignorada
+
+Resultado:
+→ Login realizado sem senha.
+
+🛡️ DEFESA APRENDIDA (MUITO IMPORTANTE)
+
+Prepared Statements (Query parametrizada)
+→ Separa código SQL de dados do usuário.
+
+Exemplo (conceito):
+
+SELECT * FROM users WHERE id = ?
+
+
+Outras defesas:
+
+Validação de tipo (ID só aceita número)
+
+Remover mensagens de erro SQL da tela
+
+Usuário do banco com privilégios mínimos
+
+Uso de WAF (Firewall de aplicação)
+
+📌 Conclusão do Dia 11:
+
+SQL Injection acontece por erro de programação, não por “hack mágico”.
