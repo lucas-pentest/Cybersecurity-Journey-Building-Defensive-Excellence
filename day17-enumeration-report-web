@@ -1,0 +1,36 @@
+DIA 17
+
+Relatório de Enumeração Web – Dia 17
+
+Alvo: 10.66.177.249
+
+1. Análise Web Inicial
+
+Acesso via navegador revelou página padrão do Microsoft IIS (“Welcome”).
+
+Não foi identificada aplicação web customizada.
+
+2. Enumeração com Gobuster
+
+Foram realizados dois processos de enumeração:
+
+Enumeração básica de diretórios comuns.
+
+Enumeração com extensões específicas de ambiente IIS (.asp, .aspx, .config, .zip).
+
+Resultado:
+
+Nenhum diretório ou arquivo relevante identificado.
+Todos retornaram código 404.
+
+3. Conclusão do Dia 17
+
+Não foram identificados diretórios expostos.
+
+Não foram encontrados backups ou arquivos sensíveis.
+
+Nenhuma aplicação web ativa foi detectada.
+
+Conclusão Geral:
+
+O ambiente apresenta boa configuração básica, com serviços ativos, porém sem vetores de exploração evidentes.
