@@ -1,0 +1,42 @@
+DIA 16
+
+Relatório de Enumeração – Dia 16
+
+Alvo: 10.66.177.249
+Objetivo: Identificar serviços ativos e possíveis vetores de ataque
+
+1. Descoberta de Serviços
+
+Foi realizada varredura inicial utilizando Nmap, identificando:
+
+Porta 21/tcp – FTP (FileZilla Server 0.9.60 beta)
+
+Porta 80/tcp – HTTP (Microsoft IIS 10.0)
+
+O servidor aparenta ser um ambiente Windows Server executando IIS e FileZilla FTP.
+
+2. Análise do Serviço FTP (21/tcp)
+
+Foi testado login anônimo no serviço FTP.
+
+Resultado:
+
+Login anônimo permitido.
+
+Diretório raiz acessível.
+
+Upload de arquivos negado (550 Permission denied).
+
+Nenhum arquivo ou diretório listado.
+
+Conclusão:
+
+O serviço FTP permite autenticação anônima, o que configura exposição desnecessária.
+Contudo, não foram identificadas permissões de escrita ou leitura relevantes que permitissem exploração direta.
+
+Impacto: Baixo a Médio (Exposição desnecessária de serviço).
+
+3. Conclusão do Dia 16
+
+Nenhuma exploração direta foi possível no serviço FTP.
+O próximo passo recomendado foi concentrar esforços na enumeração do serviço HTTP (IIS).
