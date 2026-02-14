@@ -1,0 +1,145 @@
+DIA 15
+
+Enumeração Profissional com Nmap (Padrão eJPT)
+
+🎯 Objetivo do Dia
+
+Aprender a realizar enumeração completa de um alvo, identificar serviços, versões e priorizar vetores de ataque, exatamente como exigido na certificação eJPT e no mercado de trabalho.
+
+🛠️ Ferramenta Principal
+Nmap (Network Mapper)
+
+Ferramenta usada para:
+
+Descobrir portas abertas
+
+Identificar serviços
+
+Identificar versões
+
+Obter informações do sistema
+
+📌 Comando Utilizado
+nmap -sS -sC -sV -p- <IP>
+
+Significado:
+
+-sS → SYN Scan (rápido e discreto)
+
+-sC → Scripts padrão do Nmap
+
+-sV → Descoberta de versões
+
+-p- → Escaneia todas as portas (1–65535)
+
+🖥️ Sistema Identificado
+
+Sistema Operacional: Windows
+
+Tipo: Servidor
+
+Superfície de ataque: Alta (muitas portas abertas)
+
+🔍 Serviços Encontrados
+Porta 21 – FTP (FileZilla)
+
+Serviço de transferência de arquivos
+
+Anonymous login permitido
+
+Risco: acesso não autenticado a arquivos
+
+➡️ Prioridade de ataque: ALTÍSSIMA
+
+Porta 80 – HTTP (IIS 10.0)
+
+Servidor Web Microsoft IIS
+
+Método HTTP TRACE habilitado
+
+Possíveis ataques:
+
+SQL Injection
+
+XSS
+
+Falhas de configuração
+
+CVEs do IIS
+
+➡️ Prioridade: ALTA
+
+Porta 3389 – RDP
+
+Acesso remoto ao Windows
+
+Pode permitir login completo no sistema
+
+Geralmente explorado após obtenção de credenciais
+
+➡️ Prioridade: ALTA
+
+Porta 53 – DNS
+
+Serviço de resolução de nomes
+
+Não foi totalmente identificado
+
+Não é foco inicial
+
+➡️ Prioridade: BAIXA
+
+Porta 5985 – WinRM
+
+Gerenciamento remoto via HTTP
+
+Útil apenas se houver credenciais
+
+➡️ Prioridade: CONDICIONAL
+
+🧠 Regra de Ouro Aprendida
+
+Enumeração vem antes da exploração.
+Versão encontrada = pesquisa obrigatória.
+
+📈 Conexão com a eJPT
+
+O Dia 15 treinou:
+
+Enumeração correta
+
+Leitura de scripts do Nmap
+
+Análise de risco
+
+Tomada de decisão técnica
+
+💼 Conexão com o Mercado
+
+Habilidades exigidas em:
+
+Estágio em Cybersecurity
+
+SOC Analyst Júnior
+
+Pentest Trainee
+
+Ferramentas dominadas:
+
+Nmap
+
+Análise de serviços
+
+Raciocínio ofensivo
+
+✅ Conclusão do Dia 15
+
+O aluno é capaz de:
+
+Escanear corretamente um alvo
+
+Identificar serviços críticos
+
+Priorizar vetores de ataque
+
+Justificar decisões técnicas
