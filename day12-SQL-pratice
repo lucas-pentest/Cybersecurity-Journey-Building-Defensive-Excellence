@@ -1,0 +1,85 @@
+Dia 12: Prática de SQL
+
+Data: [Coloque a data aqui]
+Foco do Lab: Fundamentos de SQL e exercícios práticos
+
+🎯 Objetivo
+
+Compreender os conceitos de SQL e sua aplicação prática em ambientes web.
+
+Aprender a identificar entradas vulneráveis em formulários.
+
+Praticar técnicas básicas de SQL Injection em laboratório controlado.
+
+Desenvolver a habilidade de analisar respostas do banco de dados de forma segura.
+
+🧠 O Que Aprendi
+
+Noções Básicas de SQL
+
+Estrutura de queries SQL: SELECT, FROM, WHERE, ORDER BY, LIMIT.
+
+Diferença entre entradas numéricas e textuais.
+
+Como a entrada do usuário afeta a query quando não há validação adequada.
+
+Identificação de Entradas Vulneráveis
+
+Identifiquei campos de formulário onde a entrada do usuário era diretamente concatenada na query SQL.
+
+Reconheci padrões clássicos de vulnerabilidade, como:
+
+SELECT * FROM users WHERE id = [entrada_usuario]
+
+
+Aprendi por que concatenar input diretamente é perigoso (risco de SQL Injection).
+
+Técnicas Básicas de SQL Injection
+
+Utilizei payloads simples para testar vulnerabilidades:
+
+' OR 1=1--
+
+' OR 'a'='a
+
+' UNION SELECT ... --
+
+Observei como o banco retornava todos os registros quando a entrada não era sanitizada.
+
+Aprendi que mensagens de erro podem vazar a estrutura do banco de dados.
+
+Conscientização sobre Defesas
+
+Introdução a Prepared Statements / Parameterized Queries.
+
+Observei a diferença entre queries inseguras e queries seguras que previnem SQLi.
+
+Entendi que a validação de entrada é a primeira linha de defesa.
+
+🔎 Exercícios Práticos
+
+Explorei aplicações web vulneráveis em ambiente de laboratório.
+
+Experimentei extrair nomes de tabelas, colunas e dados de teste de forma segura.
+
+Documentei os resultados e verifiquei qual entrada causava qual resposta.
+
+📌 Principais Conclusões
+
+Sempre analisar como a entrada do usuário é tratada.
+
+SQL Injection não é magia; depende de má manipulação de entrada e concatenação.
+
+Entender as defesas (Prepared Statements, validação de entrada, privilégio mínimo) é tão importante quanto aprender ataques.
+
+Registrar e reportar essas descobertas faz parte da prática profissional de pentesting.
+
+🛠 Ferramentas Utilizadas
+
+Navegador (para testes em aplicações web)
+
+Burp Suite / Proxy (para interceptar e modificar requisições)
+
+DVWA / Ambiente de laboratório de prática
+
+Comandos básicos de SQL para testes
