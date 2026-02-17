@@ -1,81 +1,60 @@
-# Pentest Labs - Lucas Chagras
+# Lucas | Cybersecurity | Blue Team & Security Engineering
 
-This repository documents my hands-on journey in **offensive security**, showcasing practical labs and professional reports that reflect my progression toward a career as a **Junior Penetration Tester**.
-
----
-
-## 🎯 Objective
-
-Develop real-world skills required for **professional penetration testing**, focusing on:  
-
-- Structured methodology and systematic approach  
-- Service and network enumeration  
-- Controlled exploitation techniques  
-- Basic post-exploitation practices  
-- Professional technical report writing and documentation  
+Cybersecurity professional in development, focused on building a strong foundation in Defensive Security, Incident Response, and Cloud Security, with a long-term goal of becoming a Security Engineer in the international market.
 
 ---
 
-## 📌 What You’ll Find Here
+## 🔐 Core Focus
 
-- Technical lab reports from practical exercises  
-- Detailed enumeration and analysis documentation  
-- Web application and network service security testing  
-- Vulnerability assessment and mitigation insights  
-- Hands-on learning aligned with **industry best practices**  
-
----
-
-## 🔎 Focus Areas
-
-- **Network Enumeration** – Nmap, service analysis, and footprinting  
-- **Web Application Testing** – IIS, authentication flaws, misconfigurations  
-- **Service Configuration Analysis** – FTP, HTTP  
-- **Basic Exploitation Techniques** – methodology-focused  
-- **Foundational Knowledge** – aligned with **eJPT certification objectives**  
+- Security Operations (SOC)
+- Incident Response
+- Threat Hunting
+- Cloud Security (AWS path)
+- Security Engineering
+- Security Automation
 
 ---
 
-## 📚 Applied Methodology
+## 🎯 Professional Vision
 
-1. Reconnaissance and information gathering  
-2. Enumeration and scanning  
-3. Attack vector identification  
-4. Vulnerability validation  
-5. Technical reporting and documentation  
+My objective is to evolve from operational security roles into engineering positions responsible for building scalable and resilient security architectures.
+
+I am intentionally building a defensive-first career path aligned with long-term stability and international opportunities.
 
 ---
 
-## 🚀 Final Goal
+## 🧠 Technical Stack (In Development)
 
-Build a **strong foundation in offensive security** and continuously evolve toward professional-level penetration testing.
-
----
-
-## 🎓 Certification
-
-Currently preparing for:  
-
-**eJPT – eLearnSecurity Junior Penetration Tester**  
+- Networking (TCP/IP, DNS, HTTP)
+- Linux & Windows fundamentals
+- Log analysis
+- SIEM concepts (Splunk / Microsoft Sentinel)
+- MITRE ATT&CK framework
+- AWS security fundamentals
+- Python for automation
 
 ---
 
-## 🛠 Skills & Tools
+## 📚 Certifications
 
-| Area | Tools / Concepts |
-|------|-----------------|
-| Network | Nmap, Wireshark, TCP/IP, Service enumeration |
-| Web Security | IIS, SQL Injection, Authentication flaws, HTTP methods |
-| Exploitation | Basic buffer overflow, post-exploitation |
-| Reporting | Technical documentation, mitigation reporting |
-| Labs / Training | TryHackMe, HackTheBox |
+- eJPT (In Progress)
+- CompTIA Security+ (Planned)
+- Cloud Security specialization path (AWS – In Progress)
+
+Currently strengthening offensive security foundations (eJPT preparation) to enhance defensive detection and response capabilities.
 
 ---
 
-## 🏅 Badges (Examples)
+## 🌍 Language Notice
 
-![eJPT Preparation](https://img.shields.io/badge/eJPT-In_Progress-yellow)
-![TryHackMe](https://img.shields.io/badge/TryHackMe-Labs-blue)
-![Hack The Box](https://img.shields.io/badge/HTB-Labs-green)
-![Nmap](https://img.shields.io/badge/Nmap-Networking-red)
-![Python](https://img.shields.io/badge/Python-Scripting-blue)
+Most technical documentation is written in English to align with global cybersecurity standards.
+
+Some structured notes may appear in Portuguese, my native language, as part of my learning and knowledge organization process.
+
+---
+
+## 🚀 Career Roadmap
+
+SOC Analyst → Incident Response → Security Engineer → International Market
+
+Open to collaboration, networking, and professional growth opportunities.
