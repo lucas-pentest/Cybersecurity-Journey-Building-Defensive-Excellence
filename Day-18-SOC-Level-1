@@ -1,0 +1,95 @@
+SOC Level 1 – Dia 18
+
+Plataforma: TryHackMe
+Trilha: SOC Analyst Level 1
+Autor: Lucas Chagras
+
+Objetivo
+
+Desenvolver fundamentos necessários para atuação como Analista SOC Nível 1, com foco em:
+
+Análise de logs
+
+Triagem de alertas
+
+Identificação de indicadores de comprometimento (IOCs)
+
+Processo inicial de investigação de incidentes
+
+Conceitos Aprendidos
+1. Função do Analista SOC Nível 1
+
+O profissional de Nível 1 é responsável por:
+
+Monitorar alertas de segurança
+
+Realizar triagem inicial
+
+Identificar falsos positivos
+
+Escalar incidentes reais para níveis superiores
+
+Documentar evidências de forma estruturada
+
+2. SIEM (Security Information and Event Management)
+
+Compreensão do funcionamento de um SIEM:
+
+Centralização de logs de múltiplas fontes
+
+Correlação de eventos
+
+Geração e classificação de alertas
+
+Análise por meio de dashboards e consultas
+
+3. Análise de Logs
+
+Prática na interpretação de:
+
+Logs de autenticação
+
+Eventos do Windows
+
+Registros de servidores web
+
+Conexões de rede
+
+Identificação de comportamentos suspeitos como:
+
+Múltiplas tentativas de login
+
+Acessos fora do padrão
+
+Conexões incomuns
+
+4. Processo de Triagem
+
+Metodologia aplicada:
+
+Identificar o alerta
+
+Validar a origem
+
+Analisar linha do tempo
+
+Buscar evidências adicionais
+
+Classificar como verdadeiro positivo ou falso positivo
+
+Escalar quando necessário
+
+Competências Desenvolvidas
+
+Interpretação de logs
+
+Mentalidade investigativa
+
+Análise de comportamento anômalo
+
+Documentação técnica básica de incidentes
+
+Conclusão
+
+O estudo reforçou fundamentos essenciais de segurança defensiva, ampliando minha visão além da segurança ofensiva. 
+A compreensão de como ataques são detectados fortalece minha capacidade técnica tanto para atuação em SOC quanto para pentest.
